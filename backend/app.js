@@ -13,15 +13,13 @@ const profileRoutes = require("./routes/profileRoutes");
 
 
 app.use(express.json());
-const corsConfig = {
-  origin: '',
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE']
-}
-app.use(cors(corsConfig))
-app.options("", cors(corsConfig))
+//const corsConfig = {
+//  origin: '',
+//  credentials: true,
+//  methods: ['GET', 'POST', 'PUT', 'DELETE']
+//}
+app.use(cors())
 
-app.options("",)
 
 const mongoUrl = process.env.MONGODB_URL;
 mongoose.connect(mongoUrl, err => {
