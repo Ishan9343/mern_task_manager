@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 const cors = require("cors");
 
+
 const authRoutes = require("./routes/authRoutes");
 const taskRoutes = require("./routes/taskRoutes");
 const profileRoutes = require("./routes/profileRoutes");
@@ -12,12 +13,15 @@ const profileRoutes = require("./routes/profileRoutes");
 
 
 app.use(express.json());
-app.use(cors({
-  origin:["mern-task-manager-self.vercel.app"],
-  methods:["POST","GET"],
-  credentials:true
+const corsConfig = {
+  origin: '',
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE']
+}
+app.use(cors(corsConfig))
+app.options("", cors(corsConfig))
 
-}));
+app.options("",)
 
 const mongoUrl = process.env.MONGODB_URL;
 mongoose.connect(mongoUrl, err => {

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import SignupForm from '../components/ResgiterForm';
 import MainLayout from '../layouts/MainLayout'
 
+
 const Signup = () => {
 
   useEffect(() => {
