@@ -13,12 +13,12 @@ const profileRoutes = require("./routes/profileRoutes");
 
 
 app.use(express.json());
-//const corsConfig = {
-//  origin: '',
-//  credentials: true,
-//  methods: ['GET', 'POST', 'PUT', 'DELETE']
-//}
-app.use(cors())
+const corsConfig = {
+ origin: '*',
+ credentials: true,
+ methods: ['GET', 'POST', 'PUT', 'DELETE']
+}
+app.use(cors(corsConfig))
 
 
 const mongoUrl = process.env.MONGODB_URL;
