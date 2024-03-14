@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import useFetch from '../hooks/useFetch';
 import Loader from './utils/Loader';
-import Tooltip from './utils/Tooltip';
 
 const Tasks = () => {
 
@@ -53,17 +52,17 @@ const Tasks = () => {
 
                     <span style={{fontSize:"1.3rem",fontFamily:"monospace"}} className='font-large'><b>Task: {index + 1}</b></span>
 
-                    <Tooltip text={"Edit this task"} position={"top"}>
+                   
                       <Link to={`/tasks/${task._id}`} className='ml-auto mr-2 text-blue-400 cursor-pointer'>
                         <i className="fa-solid fa-pen"></i>
                       </Link>
-                    </Tooltip>
+                    
 
-                    <Tooltip text={"Delete this task"} position={"top"}>
+                  
                       <span className='text-red-500 cursor-pointer' onClick={() => handleDelete(task._id)}>
                         Remove
                       </span>
-                    </Tooltip>
+                    
 
                   </div>
                   <div className='whitespace-pre'><i>Content: </i>{task.description}</div>
