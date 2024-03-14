@@ -3,7 +3,7 @@
     "version": 2,
     "name": "backend_data",
     "builds": [
-       { "src": "*.js", "use": "@vercel/node" }
+       { "src": "app.js", "use": "@vercel/node" }
     ],
     "routes": [
        { "src": "/(.*)", "dest": "/" }
