@@ -12,7 +12,12 @@ const profileRoutes = require("./routes/profileRoutes");
 
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin:["mern-task-manager-self.vercel.app"],
+  methods:["POST","GET"],
+  credentials:true
+
+}));
 
 const mongoUrl = process.env.MONGODB_URL;
 mongoose.connect(mongoUrl, err => {
