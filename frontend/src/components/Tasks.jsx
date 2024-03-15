@@ -39,10 +39,10 @@ const Tasks = () => {
           <div>
             {tasks.length === 0 ? (
 
-              <div className='w-[600px] h-[300px] flex items-center justify-center gap-4'>
-                <span>No tasks found</span>
-                <Link to="/tasks/add" className="bg-blue-500 text-white hover:bg-blue-600 font-medium rounded-md px-4 py-2">+ Add new task </Link>
-              </div>
+              <div class='w-full md:w-[600px] h-[300px] flex flex-col md:flex-row items-center justify-center md:justify-between gap-4'>
+              <span class="text-center md:text-left">No tasks found</span>
+              <a href="/tasks/add" class="bg-blue-500 text-white hover:bg-blue-600 font-medium rounded-md px-4 py-2 md:self-end">Add task</a>
+                </div>
 
             ) : (
               tasks.map((task, index) => (
