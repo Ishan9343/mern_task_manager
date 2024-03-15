@@ -40,7 +40,7 @@ const Navbar = () => {
             <li className='shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded'><Link to="/login">Login</Link></li>
           )}
         </ul>
-        <span className='md:hidden cursor-pointer' onClick={toggleNavbar}><i className="fa-solid fa-bars"></i></span>
+        <span className='md:hidden cursor-pointer text-white' onClick={toggleNavbar}><i className="fa-solid fa-bars"></i></span>
 
 
         {/* Navbar displayed as sidebar on smaller screens */}
