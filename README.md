@@ -5,6 +5,12 @@ This repository contains the code for a Task Manager web application developed a
 
 **Hosting Url:** https://mern-task-manager-seven.vercel.app/
 
+**Preview: (Desktop)**  1. https://photos.app.goo.gl/4N5pBYqkrq4Ruc2F9
+                        2. https://photos.app.goo.gl/zBV2YrpCjbuhHKG68
+
+**Preview Mobile Application** 1. https://photos.app.goo.gl/yeyhuaxSrZXpUh9S6
+
+
 
 **Features**:
 
