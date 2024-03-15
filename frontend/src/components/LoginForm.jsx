@@ -118,7 +118,7 @@ const LoginForm = ({ redirectUrl }) => {
                   type="button"
                   onClick={handleSubmit}
                 >
-                  Sign Up
+                  Login
                 </button>
                 <div className="pt-4">
                   <Link to="/signup" className="text-blue-400">
