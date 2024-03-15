@@ -2,6 +2,10 @@
 
 This repository contains the code for a Task Manager web application developed as part of an assignment. The application allows users to register, log in, and manage their tasks effectively. It consists of frontend, backend, database, and API components.
 
+
+**Hosting Url:** https://mern-task-manager-seven.vercel.app/
+
+
 **Features**:
 
 1. User authentication and authorization using JWT (JSON Web Tokens).
