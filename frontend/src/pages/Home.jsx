@@ -29,7 +29,7 @@ const Home = () => {
               <span className='py-2 px-3 cursor-pointer hover:bg-purple-100 transition rounded-sm transition-[margin]'>Start Now</span>
                 
              
-              <span className='relative ml-4 text-base transition-[margin]'><i className="fa-solid fa-arrow-right"></i></span>
+              <span className='relative ml-4 text-base transition-[margin]'></span>
             </Link>
           </div>
           
